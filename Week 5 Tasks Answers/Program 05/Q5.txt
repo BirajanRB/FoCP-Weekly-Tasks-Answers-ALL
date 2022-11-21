@@ -1,0 +1,13 @@
+import sys
+from statistics import mean
+
+
+
+if len(sys.argv) < 2:
+	print("No argument entered.")
+else:
+	data = sys.argv[1:]
+
+	print("The maximum temperature: ",max(data),"Degree",sep="")
+	print("The minimum temperature: ",min(data),"Degree",sep="")
+	print("The mean: ",mean(data),"Degree",sep="")
